@@ -136,11 +136,12 @@ if __name__ == "__main__":
             enable_background_investigation=args.enable_background_investigation,
         )
     else:
-        # Parse user input from command line arguments or user input
-        if args.query:
-            user_query = " ".join(args.query)
-        else:
-            user_query = input("Enter your query: ")
+        # # Parse user input from command line arguments or user input
+        # if args.query:
+        #     user_query = " ".join(args.query)
+        # else:
+        #     user_query = input("Enter your query: ")
+        user_query = "What factors are influencing AI adoption in healthcare?"
 
         # Run the agent workflow with the provided parameters
         ask(
